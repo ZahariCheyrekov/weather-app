@@ -7,6 +7,7 @@ searchIcon.addEventListener('click', getData);
 async function getData() {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=${key}`;
     console.log(url);
+    clearInputField();
 
     const response = await fetch(url);
     const data = await response.json();
@@ -20,4 +21,8 @@ async function getData() {
 
     document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
     // console.log(name, temp, temp_min, temp_max, feels_like, humidity, country, speed, icon, description, main)
+}
+
+function clearInputField() {
+    inputField.value = '';
 }

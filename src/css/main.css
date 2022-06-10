@@ -6,5 +6,33 @@
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     color: white;
-    padding: 20px;
+    padding: 30px 30px;
+}
+
+.main-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.city-name {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.city-name,
+.search-icon {
+    font-size: 24px;
+}
+
+.search-icon:hover {
+    color: rgba(128, 128, 128, 0.868);
 }
