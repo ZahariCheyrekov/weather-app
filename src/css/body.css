@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     background-image: url('../img/mountains.jpg');
     background-repeat: no-repeat;
     background-size: cover;
