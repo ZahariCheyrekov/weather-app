@@ -9,9 +9,15 @@ let previousCity = '';
 searchIcon.addEventListener('click', getData);
 
 async function getData() {
+    if (previousCity == inputField.value) {
+        return;
+    }
+
     if (inputField.value) {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=${key}`;
+        previousCity = inputField.value;
         clearInputField();
+        clearPrevCityData();
 
         try {
             const response = await fetch(url);
@@ -34,12 +40,10 @@ function displayElements(data) {
     const { country } = data.sys;
     const { main, icon, description } = data.weather[0];
 
+    const cityWeatherInfo = createComponent('article', undefined, 'city-weather-info');
+    const cityWeatherDeg = createComponent('div', undefined, 'city-weather-deg');
     const nameEl = createComponent('h2', name, 'city-location');
     const tempEl = createComponent('h1', Math.round(Number(temp)) + " °C", 'city-temp');
-    const humidityEl = createComponent('p', humidity + ' %', 'city-humidity');
-
-    const countryFlagEl = createComponent('img', undefined, 'country-flag-img');
-    countryFlagEl.src = "https://countryflagsapi.com/png/" + country;
 
     const iconEl = createComponent('img', undefined, 'weather-icon');
     iconEl.src = "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -48,17 +52,32 @@ function displayElements(data) {
     const weatherTypeEl = createComponent('p', main, 'weather-type');
     const weatherDescEl = createComponent('p', `(${description})`, 'weather-description');
 
+    const humidityEl = createComponent('p', humidity + ' %', 'city-humidity');
+
+    const countryFlagEl = createComponent('img', undefined, 'country-flag-img');
+    countryFlagEl.src = "https://countryflagsapi.com/png/" + country;
+
+    cityWeatherDeg.appendChild(nameEl);
+    cityWeatherDeg.appendChild(tempEl);
+
+    cityWeatherInfo.appendChild(cityWeatherDeg);
+    cityWeatherInfo.appendChild(iconEl);
+
     weatherContent.appendChild(weatherTypeEl);
     weatherContent.appendChild(weatherDescEl);
 
-    cityData.appendChild(nameEl);
-    cityData.appendChild(tempEl);
-    cityData.appendChild(iconEl);
+    cityData.appendChild(cityWeatherInfo);
     cityData.appendChild(weatherContent);
     cityData.appendChild(humidityEl);
     cityData.appendChild(countryFlagEl);
 
     displayImage(name);
+}
+
+function clearPrevCityData() {
+    while (cityData.firstChild) {
+        cityData.removeChild(cityData.firstChild);
+    }
 }
 
 function createComponent(type, content, className) {
