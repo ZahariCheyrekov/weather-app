@@ -1,7 +1,9 @@
 const key = 'c4f1f083adf5cee8bef3c3c18743abdd';
+
 const inputField = document.querySelector('.city-name');
 const searchIcon = document.querySelector('.search-icon i');
 const cityData = document.querySelector('.city-data');
+
 let previousCity = '';
 
 searchIcon.addEventListener('click', getData);
@@ -32,14 +34,14 @@ function displayElements(data) {
     const { country } = data.sys;
     const { main, icon, description } = data.weather[0];
 
-    const nameEl = createComponent('h2', name, 'city-name');
+    const nameEl = createComponent('h2', name, 'city-location');
     const tempEl = createComponent('h1', Math.round(Number(temp)) + " °C", 'city-temp');
     const humidityEl = createComponent('p', humidity + ' %', 'city-humidity');
 
     const countryFlagEl = createComponent('img', undefined, 'country-flag-img');
     countryFlagEl.src = "https://countryflagsapi.com/png/" + country;
 
-    const iconEl = document.createElement('img', undefined, 'weather-icon');
+    const iconEl = createComponent('img', undefined, 'weather-icon');
     iconEl.src = "https://openweathermap.org/img/wn/" + icon + ".png";
 
     const weatherContent = createComponent('article', undefined, 'weather-content');
@@ -61,9 +63,7 @@ function displayElements(data) {
 
 function createComponent(type, content, className) {
     let element = document.createElement(type);
-    if (conten !== undefined) {
-        element.textContent = content;
-    }
+    element.textContent = content;
     element.classList.add(className);
 
     return element;
