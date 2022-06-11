@@ -61,7 +61,9 @@ function displayElements(data) {
 
 function createComponent(type, content, className) {
     let element = document.createElement(type);
-    element.textContent = content;
+    if (conten !== undefined) {
+        element.textContent = content;
+    }
     element.classList.add(className);
 
     return element;
