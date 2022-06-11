@@ -45,7 +45,13 @@ function displayElements(data) {
     const weatherTypeEl = createComponent('p', main, 'weather-type');
     const weatherDescEl = createComponent('p', `(${description})`, 'weather-description');
 
-    
+    cityData.appendChild(nameEl);
+    cityData.appendChild(tempEl);
+    cityData.appendChild(humidityEl);
+    cityData.appendChild(countryFlagEl);
+    cityData.appendChild(iconEl);
+    cityData.appendChild(weatherTypeEl);
+    cityData.appendChild(weatherDescEl);
 
     displayImage(name);
 }
