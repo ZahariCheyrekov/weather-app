@@ -42,16 +42,19 @@ function displayElements(data) {
     const iconEl = document.createElement('img', undefined, 'weather-icon');
     iconEl.src = "https://openweathermap.org/img/wn/" + icon + ".png";
 
+    const weatherContent = createComponent('article', undefined, 'weather-content');
     const weatherTypeEl = createComponent('p', main, 'weather-type');
     const weatherDescEl = createComponent('p', `(${description})`, 'weather-description');
 
+    weatherContent.appendChild(weatherTypeEl);
+    weatherContent.appendChild(weatherDescEl);
+
     cityData.appendChild(nameEl);
     cityData.appendChild(tempEl);
+    cityData.appendChild(iconEl);
+    cityData.appendChild(weatherContent);
     cityData.appendChild(humidityEl);
     cityData.appendChild(countryFlagEl);
-    cityData.appendChild(iconEl);
-    cityData.appendChild(weatherTypeEl);
-    cityData.appendChild(weatherDescEl);
 
     displayImage(name);
 }
