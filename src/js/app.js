@@ -6,6 +6,13 @@ const cityData = document.querySelector('.city-data');
 
 let previousCity = '';
 
+window.addEventListener("keypress", (ev) => {
+    if (ev.key === "Enter") {
+        ev.preventDefault();
+        searchIcon.click();
+    }
+});
+
 searchIcon.addEventListener('click', getData);
 
 async function getData() {
