@@ -59,7 +59,7 @@ function displayElements(data) {
     const weatherTypeEl = createComponent('p', main, 'weather-type');
     const weatherDescEl = createComponent('p', `(${description})`, 'weather-description');
 
-    const humidityEl = createComponent('p', humidity + ' %', 'city-humidity');
+    const humidityEl = createComponent('p', `Humidity: ${humidity}%`, 'city-humidity');
 
     const countryFlagEl = createComponent('img', undefined, 'country-flag-img');
     countryFlagEl.src = "https://countryflagsapi.com/png/" + country;
