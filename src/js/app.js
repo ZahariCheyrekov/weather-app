@@ -17,7 +17,8 @@ async function getData() {
             const { country } = data.sys;
             const { speed } = data.wind;
             const { icon, description, main } = data.weather[0];
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
+
+            displayImage(name);
 
         } catch (error) {
             inputField.value = 'Invalid city name!';
@@ -29,6 +30,10 @@ async function getData() {
 
         // console.log(name, temp, temp_min, temp_max, feels_like, humidity, country, speed, icon, description, main)
     }
+}
+
+function displayImage(name) {
+    document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
 }
 
 function clearInputField() {
