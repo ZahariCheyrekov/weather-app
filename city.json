@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "coord": {
         "lon": 23.3242,
@@ -43,4 +44,51 @@
     "id": 727011,
     "name": "Sofia",
     "cod": 200
+=======
+{
+    "coord": {
+        "lon": 23.3242,
+        "lat": 42.6975
+    },
+    "weather": [
+        {
+            "id": 520,
+            "main": "Rain",
+            "description": "light intensity shower rain",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 17.83,
+        "feels_like": 17.81,
+        "temp_min": 17.83,
+        "temp_max": 18.36,
+        "pressure": 1013,
+        "humidity": 82
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 300
+    },
+    "rain": {
+        "1h": 1.54
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1654963528, 
+    "sys": {
+        "type": 1,
+        "id": 6366,
+        "country": "BG",
+        "sunrise": 1654915707,
+        "sunset": 1654970662
+    },
+    "timezone": 10800,
+    "id": 727011,
+    "name": "Sofia",
+    "cod": 200
+>>>>>>> 52c19804451a7422a3bfce3fdde13a304e534af1
 }
