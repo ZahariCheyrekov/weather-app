@@ -1,6 +1,6 @@
 # Weather-App
 
-I will be really happy if you check out the project from the given link and tell me more about what you think: https://zaharicheyrekov.github.io/Weather-App/
+I will be really happy if you check out the project from the given link and tell me more about what you think: https://zaharicheyrekov.github.io/Weather-App/.
 
 # About this project
 
@@ -65,3 +65,12 @@ The link looks like this: `https://api.openweathermap.org/data/2.5/weather?q=${c
 
 The other cool thing about OpenWeatherMap is that they also give you the ability to get an weather icon from the weather section of the above json file. To be more clear, it gives you code for the icon.
 `https://openweathermap.org/img/wn/${icon}.png`
+
+You can learn more here: https://openweathermap.org/.
+
+## Country Flags API
+
+The next API used is Country Flags API. Country Flags API is an API designed to save developers time from having to download hundreds of flags and handling different cases for identifying how to get a certain country's flag (by name or by code).
+
+I get the country name from the OpenWeatherMap json file and give it to Country Flags API. Then I store the information in img tag and add it to the html.
+`https://countryflagsapi.com/png/${country}`
