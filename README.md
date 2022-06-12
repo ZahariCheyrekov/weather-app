@@ -66,7 +66,7 @@ The link looks like this: `https://api.openweathermap.org/data/2.5/weather?q=${c
 The other cool thing about OpenWeatherMap is that they also give you the ability to get an weather icon from the weather section of the above json file. To be more clear, it gives you code for the icon.
 `https://openweathermap.org/img/wn/${icon}.png`
 
-You can learn more here: https://openweathermap.org/.
+You can learn more about here: https://openweathermap.org/.
 
 ## Country Flags API
 
@@ -76,3 +76,11 @@ I get the country name from the OpenWeatherMap json file and give it to Country 
 `https://countryflagsapi.com/png/${country}`
 
 You can learn more about here: https://www.countryflagsapi.com/.
+
+## Unsplash
+
+The other cool thing wich I implemented is using background images from Unsplash. Unsplash is a platform that has gifted hundreds of thousands of their own photos to fuel creativity around the world.
+
+It is really simple. You just enter the desired location and when you click search icon or enter button the unsplash is searching for an image which was taken from the same place and it gives it to you.
+
+`https://source.unsplash.com/1600x900/${name}`
