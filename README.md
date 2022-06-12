@@ -74,3 +74,5 @@ The next API used is Country Flags API. Country Flags API is an API designed to 
 
 I get the country name from the OpenWeatherMap json file and give it to Country Flags API. Then I store the information in img tag and add it to the html.
 `https://countryflagsapi.com/png/${country}`
+
+You can learn more about here: https://www.countryflagsapi.com/.
