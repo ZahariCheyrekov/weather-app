@@ -61,3 +61,4 @@ This is what data can you get by simply entering the destination you want:
     "cod": 200
 }
 ```
+The link looks like this: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`
