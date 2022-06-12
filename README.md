@@ -62,3 +62,6 @@ This is what data can you get by simply entering the destination you want:
 }
 ```
 The link looks like this: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`
+
+The other cool thing about OpenWeatherMap is that they also give you the ability to get an weather icon from the weather section of the above json file. To be more clear, it gives you code for the icon.
+`https://openweathermap.org/img/wn/${icon}.png`
