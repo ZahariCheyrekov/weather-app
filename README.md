@@ -13,3 +13,51 @@ It turns out that API is such a useful thing. So this is my first project in whi
 ## OpenWeatherMap
 
 OpenWeatherMap is the first thing that I used to get the work done. It is an online service, owned by OpenWeather Ltd, that provides global weather data via API, including current weather data, forecasts, nowcasts and historical weather data for any geographical location. The company provides a minute-by-minute hyperlocal precipitation forecast for any location.
+
+This is what data can you get by simply entering the destination you want:
+
+```json
+{
+    "coord": {
+        "lon": 23.3242,
+        "lat": 42.6975
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 16.83,
+        "feels_like": 16.87,
+        "temp_min": 16.83,
+        "temp_max": 17.25,
+        "pressure": 1014,
+        "humidity": 88
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 280
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1655017038,
+    "sys": {
+        "type": 1,
+        "id": 6366,
+        "country": "BG",
+        "sunrise": 1655002099,
+        "sunset": 1655057093
+    },
+    "timezone": 10800,
+    "id": 727011,
+    "name": "Sofia",
+    "cod": 200
+}
+```
