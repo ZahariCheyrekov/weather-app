@@ -109,3 +109,11 @@ This is an applications which gives you information about the weather from the d
 ### Computer location
 
 ![weather-app-computer-search](https://user-images.githubusercontent.com/95768526/173223380-67defa3e-95af-4b05-a849-db24427dd3a5.png)
+
+### Mobile search
+
+![weather-app-mobile](https://user-images.githubusercontent.com/95768526/173223531-2c203036-2e91-4f26-b09a-0a31fb37b027.png)
+
+### Mobile location
+
+![weather-app-mobile](https://user-images.githubusercontent.com/95768526/173223489-a65bcc00-8d3f-42ec-a05b-2bc3bdc55057.png)
