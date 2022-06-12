@@ -99,3 +99,13 @@ This is an applications which gives you information about the weather from the d
 - <a href="https://www.postman.com/">Postman</a>
 - <a href="https://fonts.google.com/">Google Fonts</a>
 - <a href="https://fontawesome.com/">Font Awesome</a>
+
+# Images
+
+### Computer search
+
+![weather-app-base](https://user-images.githubusercontent.com/95768526/173223311-d101ce58-1ffe-40b3-9324-7dc5f3036da2.png)
+
+### Computer location
+
+![weather-app-computer-search](https://user-images.githubusercontent.com/95768526/173223380-67defa3e-95af-4b05-a849-db24427dd3a5.png)
