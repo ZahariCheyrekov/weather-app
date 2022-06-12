@@ -90,3 +90,5 @@ You can learn more about here: https://unsplash.com/.
 # Summary
 
 This is an applications which gives you information about the weather from the desired destination.
+
+### Technology used in this project: 
