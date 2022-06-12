@@ -86,3 +86,7 @@ It is really simple. You just enter the desired location and when you click sear
 `https://source.unsplash.com/1600x900/${name}`
 
 You can learn more about here: https://unsplash.com/.
+
+# Summary
+
+This is an applications which gives you information about the weather from the desired destination.
