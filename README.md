@@ -84,3 +84,5 @@ The other cool thing wich I implemented is using background images from Unsplash
 It is really simple. You just enter the desired location and when you click search icon or enter button the unsplash is searching for an image which was taken from the same place and it gives it to you.
 
 `https://source.unsplash.com/1600x900/${name}`
+
+You can learn more about here: https://unsplash.com/.
