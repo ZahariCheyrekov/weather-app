@@ -60,7 +60,7 @@ This is what data can you get by simply entering the destination you want:
     "name": "Sofia",
     "cod": 200
 }
-```
+``` 
 The link looks like this: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`
 
 The other cool thing about OpenWeather is that they also give you the ability to get a weather icon from the weather section of the above json file. To be more clear, it gives you code for the icon.
